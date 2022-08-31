@@ -1,4 +1,17 @@
-getContent();
+let nome;
+function login(){
+  const inputLogin = document.querySelector('#inputLogin').value
+  const primeiraPagina = document.querySelector('.primeira-pagina')
+  const segundaPagina = document.querySelector('.segunda-pagina')
+  const usuarioLogado = document.querySelector('.usuarioLogado')
+  primeiraPagina.classList.add('escondido')
+  segundaPagina.classList.remove('escondido')
+  usuarioLogado.innerHTML = inputLogin
+  nome = usuarioLogado
+  getContent();
+}
+
+
 async function getContent() {
   try {
     const response = await fetch(
