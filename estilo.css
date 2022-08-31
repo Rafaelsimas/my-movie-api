@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: black;
+}
+
+.topo{
+    color: rgba(173, 172, 172, 0.945);
+    width: 100%;
+    height: 93px;
+    display: flex;
+    justify-content: center;
+    background: rgba(126, 64, 226, 0.35);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.caixa{
+    width: 80%;
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.areaLogada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.lista-de-filmes{
+    margin-top: calc(90px + 93px);
+    margin-inline: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista-de-filmes li{
+    border: 1px solid rgba(211, 211, 211, 0.521);
+    border-radius: 8px;
+    color: white;
+    margin: 15px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+
+.lista-de-filmes li:hover{
+    opacity: 0.9;
+}
+
+.lista-de-filmes li img{
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    margin-top: 0;
+    border-radius: 8px;
+}
+
+.box-descricao{
+    
+    height: 300px;
+    max-height: 300px;
+    line-height: 30px;
+}
+
+.titulo-filme{
+    font-weight: bold;
+    margin: 8px;
+    border-bottom: 1px solid lightgray;
+}
+
+.elenco{
+    
+    padding: 8px;
+    height: 88px;
+    max-height: 88px;
+}
+
+@media (max-width:700px){
+    .lista-de-filmes{
+        margin-top: calc(90px + 93px);
+        margin-inline: auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+    .lista-de-filmes li{
+        border: 1px solid rgba(211, 211, 211, 0.521);
+        border-radius: 8px;
+        color: white;
+        margin: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 12px;
+        opacity: 0.5;
+        transition: 0.3s ease-in-out;
+    }
+}
+@media (max-width:916px){
+    .lista-de-filmes{
+        margin-top: calc(90px + 93px);
+        margin-inline: auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+    .lista-de-filmes li{
+        border: 1px solid rgba(211, 211, 211, 0.521);
+        border-radius: 8px;
+        color: white;
+        margin: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 12px;
+        opacity: 0.5;
+        transition: 0.3s ease-in-out;
+    }
+}
+
